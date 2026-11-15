@@ -156,11 +156,11 @@ After completing the backend configuration, I switched to the end-user web porta
 - Inspected Windows Task Manager and identified hung Citrix Workspace background processes (`concentr.exe` and `wfica32.exe`) caused by an improper session disconnect.
 - Terminated the hung Citrix processes, cleared the local Citrix Receiver cache, and reset the user's orphaned session on the Citrix StoreFront server.
 
-<img width="1464" height="880" alt="s12_internalnotes" src="https://github.com/user-attachments/assets/d2df6cd0-2262-4ed7-8135-60e9f06fa810" />
+<img width="716" height="832" alt="DrThorne_log" src="https://github.com/user-attachments/assets/45159893-264d-4810-9916-a1e301de0056" />
 
 **Resolution & User Communication:** Informed Dr. Thorne that his hung Citrix session was cleared and verified that Epic Hyperspace launched cleanly on Exam Room 4's workstation before closing the ticket.
 
-<img width="1467" height="880" alt="s13_email" src="https://github.com/user-attachments/assets/10c45fff-c536-4b40-b24a-b36c77ca93d6" />
+<img width="717" height="833" alt="DrThorne_Email" src="https://github.com/user-attachments/assets/8b9b2073-0fbe-4908-baa6-9062b6877ab7" />
 
 ---
 
@@ -195,8 +195,12 @@ After completing the backend configuration, I switched to the end-user web porta
 - Checked the user's profile in the Imprivata OneSign Admin Console and confirmed the new replacement badge's RFID serial number had not yet been bound to Active Directory account `crivera`.
 - Triggered the self-service badge enrollment prompt at the workstation and walked the nurse through authenticating with his AD credentials to link the new badge.
 
+<img width="728" height="768" alt="Priyapatel_log" src="https://github.com/user-attachments/assets/7cf000ef-4271-4d34-a61b-cbf4a2699e26" />
+
+
 **Resolution & User Communication:** Confirmed with Carlos that his replacement badge was successfully enrolled in Imprivata OneSign and tested tap-and-go authentication on the ICU workstation.
 
+<img width="736" height="773" alt="PriyaPatel_email" src="https://github.com/user-attachments/assets/5a60660c-2208-4319-b272-e8d0c44b0cc1" />
 
 ---
 
