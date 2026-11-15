@@ -3,7 +3,16 @@
 ## Project Overview
 This project is a self-hosted, containerized **Healthcare IT Help Desk Ticketing System** deployed locally using **Docker Compose**, **osTicket**, and **MariaDB**. The objective of this lab was to simulate a real-world hospital/clinical Tier 1 IT Support environment—from standing up the underlying server infrastructure and configuring administrative routing rules to triaging, troubleshooting, and resolving urgent clinical support tickets.
 
+
+## Key Skills Demonstrated
+* **Containerization & Infrastructure:** Docker, Docker Compose, MariaDB, Linux CLI, YAML configuration, local port mapping.
+  
+* **IT Service Management (ITSM):** Ticket lifecycle management, priority triage, SLA policy enforcement, department routing, and documentation best practices.
+  
+* **Healthcare IT Support:** Epic Hyperspace / Citrix session troubleshooting, Workstation on Wheels (WOW) hardware diagnostics, Imprivata Single Sign-On (SSO) badge enrollment, and urgent clinical communication.
+
 ---
+
 ## Part 1: Terminal Setup & Architecture Deployment
 
 Rather than installing a web server, PHP engine, and database directly onto the host operating system, I built an isolated multi-container architecture from the command line  using **Docker Compose**:
@@ -110,7 +119,7 @@ To mirror how hospital IT teams separate Tier 1 triage from specialized clinical
 
 ### Step 2: Configuring SLA (Service Level Agreement) Plans
 Because downtime in a clinical setting directly impacts patient care, I navigated to **Admin Panel > Manage > SLA Plans** to establish response targets based on clinical urgency:
-* **Critical Clinical SLA (15-Minute Grace Period):** Applied to exam room, Emergency Department, and ICU workstation outages where patient care is actively delayed.
+* **Critical Clinical SLA (1-hour Grace Period):** Applied to exam room, Emergency Department, and ICU workstation outages where patient care is actively delayed.
 * **Standard Clinical SLA (4-Hour Grace Period):** Applied to routine hardware requests, non-urgent printer issues, and general software questions.
 
 <img width="728" height="321" alt="s5 3_SLA" src="https://github.com/user-attachments/assets/2323b36a-01a5-4bbf-abb4-f2fcc07dd7ae" />
@@ -135,7 +144,7 @@ After completing the backend configuration, I switched to the end-user web porta
 
 <img width="735" height="820" alt="s10 2_ticket" src="https://github.com/user-attachments/assets/d798a1c3-4f1e-4aa2-aabb-81891654c7b4" />
 
-* **Confirmation the ticket was submitted succesffully**
+* **Confirmation the ticket was submitted successfully**
 <img width="725" height="821" alt="s10 3_confirmation" src="https://github.com/user-attachments/assets/86aee851-8ef9-4e58-9324-5edcbe4448c3" />
 
 ### Step 2: 
@@ -203,10 +212,3 @@ After completing the backend configuration, I switched to the end-user web porta
 <img width="736" height="773" alt="PriyaPatel_email" src="https://github.com/user-attachments/assets/5a60660c-2208-4319-b272-e8d0c44b0cc1" />
 
 ---
-
-## Key Skills Demonstrated
-* **Containerization & Infrastructure:** Docker, Docker Compose, MariaDB, Linux CLI, YAML configuration, local port mapping.
-  
-* **IT Service Management (ITSM):** Ticket lifecycle management, priority triage, SLA policy enforcement, department routing, and documentation best practices.
-  
-* **Healthcare IT Support:** Epic Hyperspace / Citrix session troubleshooting, Workstation on Wheels (WOW) hardware diagnostics, Imprivata Single Sign-On (SSO) badge enrollment, and urgent clinical communication.
